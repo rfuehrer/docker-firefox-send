@@ -2,7 +2,7 @@ FROM node:8-alpine
 MAINTAINER Rene Fuehrer <rene.fuehrer@generali.com>
 
 # The Send version to build (git treeish)
-ARG version=v2.5.4
+ARG version=v3.0.22
 
 RUN apk add --no-cache git
 RUN addgroup -S -g 10001 app && adduser -S -D -G app -u 10001 app
